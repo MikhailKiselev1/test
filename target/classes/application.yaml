@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost/sk_example_db
+    username: root
+    password: testtest
+  liquibase:
+    enabled: true
