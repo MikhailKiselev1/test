@@ -17,7 +17,7 @@ public class EntityService {
 
     private final EntityRepository entityRepository;
 
-    public ResponseEntity<ModifyRs> postModify(ModifyRq request) {
+    public synchronized ResponseEntity<ModifyRs> postModify(ModifyRq request) {
 
         try {
             //Поиск сущности
